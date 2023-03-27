@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #tetris{
+            border-collapse: collapse;
+        }
+        td{
+            /* border: 1px solid #edede9; */
+            width: 30px;
+            height: 30px;
+        }
+        td.r{
+            background-color: #EDAFB8;
+        }
+        td.o{
+            background-color: #f6ae2d;
+        }
+        td.y{
+            background-color: #EAC435;
+        }
+        td.g{
+            background-color: #a7c957;
+        }
+        td.b{
+            background-color: #8ecae6;
+        }
+        td.n{
+            background-color: #457b9d;
+        }
+        td.v{
+            background-color: #CFBCDF;
+        }
+        td.w{
+            background-color: white;
+        }
+        td.dg{
+            background-color: #edede9;
+        }
+        td.black{
+            background-color: #8d99ae;
+        }
+        
+        h1{
+            color: #ddbea9;
+        }
+
+        /* body{
+            background-color: #fff0f3;
+        } */
+    </style>
+</head>
+<body>
+
+
+    <div align="center">
+        <h1>테트리스</h1>
+        <table id="tetris"></table>
+    </div>
+    <!-- 아래 있어야한다. -->
+    <script src="tetris.js"></script>
+    <script>
+            init();
+            makeBlock();
+            draw();
+            
+            // rotate()
+    </script>
+   
+
+</body>
+</html>
